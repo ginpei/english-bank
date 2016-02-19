@@ -1,0 +1,27 @@
+h1 Listing phrases
+
+table
+  thead
+    tr
+      th Body
+      th Source
+      th Scene
+      th Describe
+      th
+      th
+      th
+
+  tbody
+    - @phrases.each do |phrase|
+      tr
+        td = phrase.body_md
+        td = phrase.source
+        td = phrase.scene
+        td = phrase.describe
+        td = link_to 'Show', phrase
+        td = link_to 'Edit', edit_phrase_path(phrase)
+        td = link_to 'Destroy', phrase, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Phrase', new_phrase_path

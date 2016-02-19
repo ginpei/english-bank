@@ -1,0 +1,18 @@
+p#notice = notice
+
+p
+  strong Body:
+  = @phrase.body
+p
+  strong Source:
+  = @phrase.source
+p
+  strong Scene:
+  = @phrase.scene
+p
+  strong Describe:
+  = @phrase.describe
+
+= link_to 'Edit', edit_phrase_path(@phrase)
+'|
+= link_to 'Back', phrases_path
