@@ -14,7 +14,7 @@ table
   tbody
     - @phrases.each do |phrase|
       tr
-        td = phrase.body_md
+        td = md phrase.body
         td = phrase.source
         td = phrase.scene
         td = phrase.describe
