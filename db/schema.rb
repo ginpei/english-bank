@@ -11,15 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160219235534) do
+ActiveRecord::Schema.define(version: 20160220184427) do
 
   create_table "phrases", force: :cascade do |t|
     t.text     "body"
     t.text     "source"
     t.text     "scene"
-    t.text     "describe"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.text     "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.text     "translation"
   end
 

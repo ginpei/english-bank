@@ -4,10 +4,10 @@ one:
   body: MyText
   source: MyText
   scene: MyText
-  describe: MyText
+  description: MyText
 
 two:
   body: MyText
   source: MyText
   scene: MyText
-  describe: MyText
+  description: MyText

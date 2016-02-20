@@ -18,7 +18,7 @@ class PhrasesControllerTest < ActionController::TestCase
 
   test "should create phrase" do
     assert_difference('Phrase.count') do
-      post :create, phrase: { body: @phrase.body, describe: @phrase.describe, scene: @phrase.scene, source: @phrase.source }
+      post :create, phrase: { body: @phrase.body, description: @phrase.description, scene: @phrase.scene, source: @phrase.source }
     end
 
     assert_redirected_to phrase_path(assigns(:phrase))
@@ -35,7 +35,7 @@ class PhrasesControllerTest < ActionController::TestCase
   end
 
   test "should update phrase" do
-    patch :update, id: @phrase, phrase: { body: @phrase.body, describe: @phrase.describe, scene: @phrase.scene, source: @phrase.source }
+    patch :update, id: @phrase, phrase: { body: @phrase.body, description: @phrase.description, scene: @phrase.scene, source: @phrase.source }
     assert_redirected_to phrase_path(assigns(:phrase))
   end
 
