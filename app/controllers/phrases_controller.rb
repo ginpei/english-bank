@@ -4,7 +4,7 @@ class PhrasesController < ApplicationController
   # GET /phrases
   # GET /phrases.json
   def index
-    @phrases = Phrase.all
+    @phrases = Phrase.order(updated_at: 'desc').all
   end
 
   # GET /phrases/1

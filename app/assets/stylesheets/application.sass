@@ -1,0 +1,23 @@
+@import "materialize"
+
+.base-color-text
+	background-color: #333
+.base-font
+	font-family: "游ゴシック", sans-serif
+	font-size: 18px
+.base-paragraph
+	line-height: 1.45
+
+b, strong
+	font-weight: bold
+\:link
+	text-decoration: underline
+
+body
+	@extend .base-color-text
+	@extend .base-font
+	@extend .base-paragraph
+	background-color: #fff
+
+@import "app"
+@import "phrases"

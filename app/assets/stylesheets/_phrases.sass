@@ -1,0 +1,23 @@
+.phrase
+	&-index-item
+		h1
+			font-size: 1em
+			line-height: 1.5em
+
+			&::first-line
+				font-size: 2em
+				line-height: 1em
+
+			a
+				color: #333
+
+	&-body
+		em
+			&:nth-of-type(4n+1)
+				@extend .yellow-text.text-darken-3
+			&:nth-of-type(4n+2)
+				@extend .teal-text
+			&:nth-of-type(4n+3)
+				@extend .light-blue-text
+			&:nth-of-type(4n+4)
+				@extend .purple-text

@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title
+      - if @title
+        = "#{@title} - English Bank"
+      - else
+        | English Bank
+    meta name="viewport" content="width=320px"
+    link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  body
+    header.app-header
+      div.app-header-logo
+        = link_to 'English Bank', root_path
+
+    div.container
+      = yield
+
+    footer.app-footer
+      div.copyright
+        | By 
+        a href="http://ginpei.info/" Ginpei

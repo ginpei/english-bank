@@ -2,20 +2,22 @@ p#notice = notice
 
 p
   strong Body:
-  = @phrase.body
+  div.phrase-body = md @phrase.body
 p
   strong Translation:
-  = @phrase.translation
+  div.phrase-body = md @phrase.translation
 p
   strong Source:
-  = @phrase.source
+  = md @phrase.source
 p
   strong Scene:
-  = @phrase.scene
+  = md @phrase.scene
 p
   strong Describe:
-  = @phrase.describe
+  = md @phrase.describe
 
 = link_to 'Edit', edit_phrase_path(@phrase)
 '|
 = link_to 'Back', phrases_path
+'|
+= link_to 'Destroy', @phrase, data: {:confirm => 'Are you sure?'}, :method => :delete
