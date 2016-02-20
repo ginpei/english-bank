@@ -4,6 +4,7 @@ table
   thead
     tr
       th Body
+      th Translation
       th Source
       th Scene
       th Describe
@@ -15,6 +16,7 @@ table
     - @phrases.each do |phrase|
       tr
         td = md phrase.body
+        td = md phrase.translation
         td = phrase.source
         td = phrase.scene
         td = phrase.describe

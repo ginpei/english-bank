@@ -1,5 +1,6 @@
 module ApplicationHelper
   def md(text)
+    return '' unless text
     common_markdown_renderer.render(text).html_safe
   end
 

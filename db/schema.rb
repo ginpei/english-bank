@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160219231921) do
+ActiveRecord::Schema.define(version: 20160219235534) do
 
   create_table "phrases", force: :cascade do |t|
     t.text     "body"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20160219231921) do
     t.text     "describe"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text     "translation"
   end
 
 end
