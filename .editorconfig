@@ -15,3 +15,6 @@ indent_style = space
 
 [*.{yml,yaml}]
 indent_style = space
+
+[*.slim]
+indent_style = space

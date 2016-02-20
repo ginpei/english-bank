@@ -12,14 +12,27 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body
-    header.app-header
-      div.app-header-logo
-        = link_to 'English Bank', root_path
+    header.app-header.ui-gpHeader
+      div.app-header-logo.ui-gpHeader-title
+        = link_to 'English Bank', root_path, tabindex: '-1'
+      div.ui-gpHeader-contentArea
+        div.ui-gpHeader-group
+          div.ui-gpHeader-group-title Phrases
+          div.ui-gpHeader-group-linkList
+            a.ui-gpHeader-link href="#{phrases_path}" tabindex="-1" Index
+            a.ui-gpHeader-link href="#{new_phrase_path}" tabindex="-1" New
+        div.ui-gpHeader-group
+          div.ui-gpHeader-group-title Login
+          div.ui-gpHeader-group-linkList
+            a.ui-gpHeader-link href="#{root_path}404" tabindex="-1" Twitter
 
-    div.container
+    div.app-main
       = yield
 
-    footer.app-footer
-      div.copyright
-        | By 
-        a href="http://ginpei.info/" Ginpei
+    footer.app-footer.ui-gpFooter
+      address
+        | Created by 
+        strong Takanashi Ginpei
+        br
+        | Twitter: 
+        a href="https://twitter.com/ginpei_en" @ginpei_en
