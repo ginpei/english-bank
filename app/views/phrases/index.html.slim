@@ -1,6 +1,7 @@
 h1 Listing phrases
 
-p = link_to 'New Phrase', new_phrase_path
+p.right-align
+  = link_to 'New Phrase', new_phrase_path, class: 'btn teal'
 
 - @phrases.each do |phrase|
   article.phrase-index-item
