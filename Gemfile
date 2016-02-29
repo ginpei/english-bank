@@ -54,4 +54,6 @@ end
 gem 'slim-rails'
 gem 'redcarpet'
 gem 'materialize-sass'
-gem 'rails_12factor'
+group :production do
+	gem 'rails_12factor'
+end
