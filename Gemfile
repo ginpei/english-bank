@@ -54,3 +54,4 @@ end
 gem 'slim-rails'
 gem 'redcarpet'
 gem 'materialize-sass'
+gem 'rails_12factor'
